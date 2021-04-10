@@ -1,4 +1,4 @@
-<b><h1>Iris Data Set Project</h1></b> by <b>Liam Nutley</b>
+<b><h1>Iris Data Set Project</h1></b> by <b><h2>Liam Nutley</h2></b>
 The Iris Data set is a collection of petal and sepal widths and lengths of three different flowers, namely; Iris Versicolor, Iris Setosa and Iris Virginica. 50 of each flower type were measured and the results taken. 
 For this project, I was tasked with taking this data set and creating the following three programs. 
 1. I had to write the summarised data set to a new output text file.
