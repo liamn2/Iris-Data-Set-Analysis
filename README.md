@@ -1,4 +1,4 @@
-<b>Iris Data Set Project</b> by <b>Liam Nutley<\b>
+<b>Iris Data Set Project</b> by <b>Liam Nutley</b>
 The Iris Data set is a collection of petal and sepal widths and lengths of three different flowers, namely; Iris Versicolor, Iris Setosa and Iris Virginica. 50 of each flower type were measured and the results taken. 
 For this project, I was tasked with taking this data set and creating the following three programs. 
 1. I had to write the summarised data set to a new output text file.
@@ -11,7 +11,7 @@ For the second part, I imported the NumPy function to read the .csv file of the 
 
 Finally, for the third part of the project, I imported the matplotlib.pyplot function into my code to read the .csv file and produce appropriate scatterplots of the variables. 
 
-<b>References:<\b>
+<b>References:</b>
   1. https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.html
   2. https://www.w3schools.com/python/numpy/numpy_intro.asp
   3. https://pandas.pydata.org/docs/user_guide/index.html
