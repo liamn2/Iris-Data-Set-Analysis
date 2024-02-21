@@ -1,6 +1,7 @@
 # analysis.py
 # Author: Liam Nutley
-# Program using Iris Data set to output a summary of each variable to a single text file, save a histogram of each variable to png files, and output a scatter plot of each pair of variables. 
+# Program using Iris Data set to output a summary of each variable to a single text file, save a histogram of each 
+# variable to png files, and output a scatter plot of each pair of variables. 
 
 # Variable summaries output as text file.
 import pandas as pd   
