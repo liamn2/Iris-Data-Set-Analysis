@@ -3,7 +3,7 @@
 # Program using Iris Data set to output a summary of each variable to a single text file, save a histogram of each 
 # variable to png files, and output a scatter plot of each pair of variables. 
 
-# Variable summaries output as text file.
+# Variable summaries output as .txt file.
 import pandas as pd   
 import numpy as np
 pd.set_option("display.max_rows", None, "display.max_columns", None) # Option edit to display all rows
