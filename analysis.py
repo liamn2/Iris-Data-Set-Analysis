@@ -6,6 +6,8 @@
 # Variable summaries output as .txt file.
 import pandas as pd   
 import numpy as np
+import matplotlib.pyplot as plt
+
 pd.set_option("display.max_rows", None, "display.max_columns", None) # Option edit to display all rows
 data = pd.read_csv('iris.csv', delimiter= None) # Reads our CSV file
 n = 150 # Number of Data entries
@@ -15,39 +17,36 @@ data.head(150) # Number of data entries
 f.close() # Closes file
 
 # Histograms of each variable.
-import numpy
 data=numpy.genfromtxt('iris.csv',delimiter=',') 
-import matplotlib.pyplot as pl
-pl.hist(data[:,0]) #Column Entries
-pl.title('Histogram of sepal length') # Title
-pl.xlabel('Sepal length in cm') # X axis title
-pl.ylabel('Frequency / Number of flowers') # Y axis title
-pl.savefig('sepal_length_hist.png') # saves graph
+plt.hist(data[:,0]) #Column Entries
+plt.title('Histogram of sepal length') # Title
+plt.xlabel('Sepal length in cm') # X axis title
+plt.ylabel('Frequency / Number of flowers') # Y axis title
+plt.savefig('sepal_length_hist.png') # saves graph
+plt.show() # Shows graph
+
+plt.hist(data[:,1])  #Column Entries
+plt.title('Histogram of sepal width')  # Title
+plt.xlabel('Sepal width in cm')  # X axis title
+plt.ylabel('Frequency / Number of flowers') # Y axis title
+plt.savefig('sepal_width_hist.png') # saves graph
+plt.show() # Shows graph
+
+plt.hist(data[:,2])  #Column Entries
+plt.title('Histogram of petal length')  # Title
+plt.xlabel('Petal length in cm')  # X axis title
+plt.ylabel('Frequency / Number of flowers')  # Y axis title
+plt.savefig('petal_length_hist).png')  # saves graph
 pl.show() # Shows graph
 
-pl.hist(data[:,1])  #Column Entries
-pl.title('Histogram of sepal width')  # Title
-pl.xlabel('Sepal width in cm')  # X axis title
-pl.ylabel('Frequency / Number of flowers') # Y axis title
-pl.savefig('sepal_width_hist.png') # saves graph
-pl.show() # Shows graph
-
-pl.hist(data[:,2])  #Column Entries
-pl.title('Histogram of petal length')  # Title
-pl.xlabel('Petal length in cm')  # X axis title
-pl.ylabel('Frequency / Number of flowers')  # Y axis title
-pl.savefig('petal_length_hist).png')  # saves graph
-pl.show() # Shows graph
-
-pl.hist(data[:,3])  #Column Entries
-pl.title('Histogram of petal width') # Title
-pl.xlabel('Petal width in cm')  # X axis title
-pl.ylabel('Frequency / Number of flowers')  # Y axis title
-pl.savefig('petal_width_hist.png') # saves graph
-pl.show() # Shows graph
+plt.hist(data[:,3])  #Column Entries
+plt.title('Histogram of petal width') # Title
+plt.xlabel('Petal width in cm')  # X axis title
+plt.ylabel('Frequency / Number of flowers')  # Y axis title
+plt.savefig('petal_width_hist.png') # saves graph
+plt.show() # Shows graph
 
 # Scatter plots of paired variables.
-import matplotlib.pyplot as plt
 x=[data[:,0][range(150)]] # Taking Data from Column 0 over 0 - 149
 
 y=[data[:,1][range(150)]] # Taking Data from Column 1 over 0 - 149
